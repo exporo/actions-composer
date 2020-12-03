@@ -94,7 +94,7 @@ runs:
     action_ssh_key_pub: ${{ inputs.ssh_key_pub }}
     action_ssh_domain: ${{ inputs.ssh_domain }}
     action_oauth_token: ${{ inputs.oauth_token }}
-    action_oauth_domain: ${{ inputs.oauth_domain }}
+    action_oauth_domain: ${{ inputs.oauth_token }}
     action_working_dir: ${{ inputs.working_dir }}
 
 branding:
