@@ -11,6 +11,7 @@ RUN ln -s $(pwd)/composer-1.phar /usr/local/bin/composer-1
 RUN ln -s $(pwd)/composer-2.phar /usr/local/bin/composer-2
 RUN ln -s /usr/local/bin/composer-2 /usr/local/bin/composer
 COPY switch-composer-version /usr/local/bin/.
+RUN sudo apt-get install php7.4-redis #Install ext-redis as it is required by Trading Platform
 
 COPY entrypoint /usr/local/bin/entrypoint
 ENTRYPOINT ["/usr/local/bin/entrypoint"]
